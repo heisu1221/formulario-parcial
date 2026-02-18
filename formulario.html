@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Clientes - Casino</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="header">
+    <span class="user">Usuario actual: <strong>admin</strong></span>
+</header>
+
+<main class="container">
+
+    <section class="card">
+
+        <h2>Registrar / Editar clientes</h2>
+
+        <form>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>DNI *</label>
+                    <input type="text" placeholder="Ingrese DNI (sin espacios)">
+                    <small>Debe ser único.</small>
+                </div>
+
+                <div class="input-group">
+                    <label>Nombre *</label>
+                    <input type="text" placeholder="Nombre completo">
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label>Dirección</label>
+                <input type="text" placeholder="Calle, referencia, distrito">
+            </div>
+
+            <div class="row">
+                <div class="input-group">
+                    <label>Teléfono</label>
+                    <input type="text" placeholder="987654321">
+                </div>
+
+                <div class="input-group">
+                    <label>Correo</label>
+                    <input type="email" placeholder="correo@ejemplo.com">
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn-primary">Guardar</button>
+                <button type="reset" class="btn-secondary">Limpiar</button>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <h3>Búsqueda rápida</h3>
+
+        <div class="search-box">
+            <input type="text" placeholder="Buscar por DNI o nombre...">
+            <button class="btn-primary">Buscar</button>
+            <button class="btn-secondary">Listar todos</button>
+        </div>
+
+        <div class="client-item">
+            <div>
+                <strong>Ana Perez</strong>
+                <p>DNI: 12345678 • ana@ejemplo.com</p>
+            </div>
+            <div class="actions">
+                <button class="btn-secondary">Ver</button>
+                <button class="btn-danger">Eliminar</button>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="card">
+
+        <h2>Registro de Quejas</h2>
+
+        <form>
+
+            <div class="input-group">
+                <label>Cliente (DNI o nombre) *</label>
+                <input type="text" placeholder="DNI o nombre del cliente">
+            </div>
+
+            <div class="input-group">
+                <label>Motivo *</label>
+                <input type="text" placeholder="Motivo de la queja">
+            </div>
+
+            <div class="input-group">
+                <label>Descripción</label>
+                <textarea placeholder="Detalles del caso..."></textarea>
+            </div>
+
+            <div class="buttons">
+                <button type="submit" class="btn-primary">Registrar caso</button>
+                <button type="button" class="btn-secondary">Listar casos</button>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <h3>Casos / Incidencias</h3>
+        <p class="empty">No hay casos registrados</p>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Prototype v1 • Persistencia en navegador (localStorage)</p>
+</footer>
+
+</body>
+</html>
